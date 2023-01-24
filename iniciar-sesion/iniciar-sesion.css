@@ -1,0 +1,123 @@
+:root{
+    --background-btn-color: rgb(20, 204, 204);
+    --border-color:#ccc;
+    --background-form-color: #FFFFFF;
+    --background-gradient-color: rgba(0, 0, 0, 0.3);
+    --background-line-color: #ccc;
+    --background-btn-hover: gray;
+    --background-line-color-pseudo: gray;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h5{
+    font-family: ubuntu, serif;
+    font-size: small;
+}
+
+a{
+    color: #0f7594;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(var(--background-gradient-color), 
+    var(--background-gradient-color)), url(img/img-iniciar-sesion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 60%;
+}
+
+.form{
+    width: 90vw;
+    margin: 0 auto;
+    border: 0.0625rem solid var(--border-color);
+    border-radius: 0.30em;
+    padding: 2rem;
+    background-color: var(--background-form-color);
+    transition: 0.5s;
+}
+
+.form-step{
+    display: none;
+    transition: 0.5s;
+}
+
+.form-step-active{
+    display: block;
+    transition: 0.5s;
+}
+
+.title{
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    bottom: 1.15rem;
+    top: 0.1rem;
+    font-family: oswald, serif;
+}
+
+.form label{
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.form label span{
+    color: #e73535;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    padding: 0.50em;
+    border: 0.0625rem solid var(--border-color);
+    outline: none;
+}
+
+.field{
+    margin: 1em 0;
+    font-family: ubuntu, serif;
+}
+
+.btns .btn {
+    padding: 1em 2em;
+    background-color: var(--background-btn-color);
+    border: none;
+    border-radius: 0.20em;
+    color: var(--font-principal-color);
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    font-family: oswald, serif;
+    font-weight: bold;
+}
+
+.btns{
+    display: grid;
+    gap: 1em;
+}
+
+.btns button:hover, .btnNext button:hover{
+    transition: 0.5s;
+    background-color: var(--background-btn-hover);
+}
+
+
+/*--- media query for tablet: ---*/
+
+
+@media (min-width: 600px) {
+
+    .form{
+        width: 400px;
+    }
+}

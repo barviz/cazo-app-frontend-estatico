@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Club, Barrio, Deportes, Cultura, Social">
+    <meta name="description"
+        content="Cazo app es una aplicación web desarrollada para un club de barrio que se dedica a ofrecer actividades deportivas y recreativas.">
+    <meta name="title" content="Asociate a CAZO y disfrutá de nuestras actividades">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Ubuntu">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cul-arte.css">
+    <link rel="icon" type="image/png" href="img/cazo.png">
+    <title>CAZO</title>
+</head>
+
+<body>
+
+    <section id="inicio">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+            <div class="container">
+
+                <li class="nav-logo"><a href="../index-int/index-int.html"><img src="./img/cazo.png" width="70px"
+                            alt="escudo-cazo"></a>
+                </li>
+                <a class="navbar-brand" href="../index-int/index-int.html">CAZO</a>
+                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
+                    type="button"><span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index-int/index-int.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../actividades/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../reservas/reservas.html">Mis reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../mi-perfil/mi-perfil.html">Mi perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link session" href="../index-ext/index-ext.html">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+    </section>
+
+    <main>
+
+        <section id="modal-edicion">
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Editar actividad
+                            </h5>
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <label>Nombre : </label><input class="form-control" type="text" id="nombre" name="" /><br />
+                            <label>Descripcion : </label><textarea class="form-control" type="text" id="descripcion"
+                                name=""></textarea><br />
+                            <label>Imagen : </label><input class="form-control" type="text" id="imagen" name="" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">
+                                Cerrar
+                            </button>
+                            <button type="button" class="btn">
+                                Guardar cambios
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="bg-actividad">
+
+            <div class="bg-actividad__container">
+
+                <div class="enlace-regresar"><a href="../act-cul/act-cul.html">Volver</a></div>
+
+                <button type="button" id="btnmodal" class="btn btn-dark btn.sm" data-toggle="modal"
+                    data-target="#exampleModal" data-nombre="Arte"
+                    data-descripcion="La importancia de la creatividad artística en el desarrollo emocional del ser humano es evidente. El arte debe entenderse como una posibilidad de expresión, conocimiento y transformación personal, además de fomentar el vínculo social."
+                    data-imagen="./img/img-arte.jpg">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+
+                <div class="bg-actividad__texto">
+
+                    <h1>ARTE</h1>
+
+                    <p>La importancia de la creatividad artística en el desarrollo emocional del ser humano es evidente.
+                        El arte debe entenderse como una posibilidad de expresión, conocimiento y transformación
+                        personal, además de fomentar el vínculo social.</p>
+
+                    <button type="button" class="bg-actividad__boton" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Reservá
+                    </button>
+
+                </div>
+
+                <section id="modal-seleccion">
+
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Reserva</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Elegí un turno
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn">Turno 1</button>
+                                    <button type="button" class="btn">Turno 2</button>
+                                    <button type="button" class="btn">Turno 3</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <img src="img/cazo.png" alt="escudo-cazo" class="footer__logo">
+        <p class="footer__copyright">&copy Copyright CAZO - 2022</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script defer src="cul-arte.js"></script>
+
+</body>
+
+</html>

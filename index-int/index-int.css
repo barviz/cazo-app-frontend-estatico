@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: oswald, serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+
+
+/*-------------------- seccion inicio nav --------------------*/
+
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.nav-logo {
+    animation: animacion 10s linear infinite;
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+}
+
+.navbar-nav a {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-nav {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.navbar-nav a:hover {
+    text-decoration: overline;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.navbar-toggler {
+    background: #fff;
+    font-size: 18px;
+    line-height: 0.3;
+    padding: 1px 5px;
+}
+
+.session {
+    color: rgb(20, 204, 204) !important;
+}
+
+@keyframes animacion {
+    0% {
+        transform: scale(0.8);
+    }
+
+    25% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+
+/*-------------------- seccion instructivo --------------------*/
+
+
+#instructivo {
+    background: #2C3E50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 12vh 0vh;
+}
+
+.instructivo__container {
+	margin: auto;
+    text-align: center;
+	width: 90%;
+}
+
+.instructivo__container h1 {
+    color: #000;
+    font-size: 28px;
+    margin: 30px 10px;
+    padding: 20px 10px;
+}
+
+.instructivo__container h4 {
+    color: #000;
+    font-family: ubuntu, serif;
+    font-size: 15px;
+    font-weight: lighter;
+    margin: 20px;
+}
+
+
+video {
+	width: 100%;
+}
+
+
+/*-------------------- seccion footer --------------------*/
+
+
+#footer {
+    background: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer__logo {
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.5));
+    width: 80px;
+}
+
+.footer__copyright {
+    color: #fff;
+}
+
+
+
+/*--- media query for tablet: ---*/
+
+
+@media only screen and (min-width: 600px) {
+
+    
+    .instructivo__container h1{
+        font-size: 35px;
+    }
+
+    .instructivo__container h4{
+        font-size: 16.5px;
+    }
+
+}
+
+
+/*--- media query for desktop: ---*/
+
+
+@media only screen and (min-width: 900px) {
+
+    .navbar-nav {
+        background: transparent;
+        text-align: none;
+    }
+
+    .instructivo__container {
+        width: 80%;
+    }
+
+    .instructivo__container h1{
+        font-size: 40px;
+    }
+
+    .instructivo__container h4{
+        font-size: 18px;
+    }
+
+}
+
+

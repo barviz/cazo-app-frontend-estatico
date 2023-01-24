@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Club, Barrio, Deportes, Cultura, Social">
+    <meta name="description"
+        content="Cazo app es una aplicación web desarrollada para un club de barrio que se dedica a ofrecer actividades deportivas y recreativas.">
+    <meta name="title" content="Asociate a CAZO y disfrutá de nuestras actividades">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Ubuntu">
+    <link rel="stylesheet" href="iniciar-sesion.css">
+    <link rel="icon" type="image/png" href="img/cazo.png">
+    <title>CAZO</title>
+</head>
+
+<body>
+    <main class="container">
+
+        <form class="form" th:action="@{/socio/registro}" method="POST">
+
+            <h1 class="title">Ingresá a tu cuenta</h1>
+
+            <div class="form-step-active">
+                <!--Definimos un campo que contendrá el input y el label-->
+                <div class="field">
+                    <label for="idUsuario">Usuario <span>*</span></label>
+                    <input id="idUsuario" type="text" th:value="*{usuario_nombre}" name="usuario_nombre"
+                        placeholder="Usuario: ">
+                </div>
+                <!--Definimos un campo que contendrá el input y el label-->
+                <div class="field">
+                    <label for="idClave">Contraseña <span>*</span></label>
+                    <input id="idClave" type="password" th:value="*{usuario_clave}" name="usuario_clave"
+                        placeholder="Contraseña: ">
+                </div>
+                <!--Definimos un campo que contendrá el input y el label-->
+                <div class="field">
+                    <label for="idClaveRep">Confirmar contraseña <span>*</span></label>
+                    <input id="idClaveRep" type="password" th:value="*{usuario_clave_rep}" name="usuario_clave_rep"
+                        placeholder="Confirmar contraseña: ">
+                </div>
+                <!--Definimos un campo que contendrá los botones siguiente y atrás-->
+                <div class="field btns">
+                    <button type="submit" class="btn submit" value="Registrar">Ingresar</button>
+                </div>
+            </div>
+
+            <h5>¿Aún no tenés cuenta en CAZO? <a href="../registro-socio/registro-socio.html">¡Registrate acá!</a></h5>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: oswald, serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+
+
+/*-------------------- seccion inicio nav --------------------*/
+
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.nav-logo {
+    animation: animacion 10s linear infinite;
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+}
+
+.navbar-nav a {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-nav {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.navbar-nav a:hover {
+    text-decoration: overline;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.navbar-toggler {
+    background: #fff;
+    font-size: 18px;
+    line-height: 0.3;
+    padding: 1px 5px;
+}
+
+.session {
+    color: rgb(20, 204, 204) !important;
+}
+
+@keyframes animacion {
+    0% {
+        transform: scale(0.8);
+    }
+
+    25% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+
+/*-------------------- seccion perfil --------------------*/
+
+
+#perfil {
+    background: #2C3E50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+}
+
+.perfil__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+}
+
+.perfil__card-header {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.perfil__card-header-logo {
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.5));
+    width: 55px;
+}
+
+.perfil__card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil__card-body-photo {
+    width: 150px;
+}
+
+.card-body-right {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 5px;
+    text-align: right;
+    width: 100%;
+}
+
+.card-body-right th {
+    text-align: left;
+}
+
+.card-body-right td {
+    color: rgba(255, 255, 255, 0.877);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+/*-------------------- seccion modals --------------------*/
+
+
+.form-control {
+    font-family: ubuntu, serif;
+}
+
+.modal-content {
+    background: rgba(41, 41, 41, 0.836);
+    color: #fff;
+}
+
+.modal-body {
+    font-family: ubuntu, serif;
+    text-align: center;
+}
+
+#modal-edicion .modal-footer {
+    display: flex;
+    justify-content: right;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#modal-edicion .modal-body {
+    text-align: left;
+}
+
+.modal-footer .btn {
+    background-color: rgb(20, 204, 204);
+}
+
+
+
+/*-------------------- seccion footer --------------------*/
+
+
+#footer {
+    background: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer__logo {
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.5));
+    width: 80px;
+}
+
+.footer__copyright {
+    color: #fff;
+}
+
+
+/*--- media query for desktop: ---*/
+
+
+@media only screen and (min-width: 900px) {
+
+    .navbar-nav {
+        background: transparent;
+        text-align: none;
+    }
+
+
+}
